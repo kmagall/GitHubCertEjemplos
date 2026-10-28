@@ -1,5 +1,8 @@
 name: KMA A workflow for my Hello World file
-on: workflow_dispatch
+on: # Event triggers
+  push:
+    branches: [main, develop]
+  workflow_dispatch:
 jobs:
   build:
     name: Hello world action
